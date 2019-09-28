@@ -1917,7 +1917,7 @@ __webpack_require__.r(__webpack_exports__);
     console.log('Component mounted.');
   },
   methods: {
-    addProducts: function addProducts() {
+    addProduct: function addProduct() {
       this.form.post('api/product').then(function () {
         console.log('Added');
       })["catch"](function () {

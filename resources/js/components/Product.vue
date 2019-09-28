@@ -48,7 +48,7 @@
             console.log('Component mounted.')
         },
         methods:{
-            addProducts()
+            addProduct()
             {
                 this.form.post('api/product')
                 .then(()=>{
