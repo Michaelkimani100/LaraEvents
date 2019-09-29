@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\Listeners\UpdateProductStatusListener;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Auth\Listeners\SendEmailVerificationNotification;
@@ -15,8 +16,8 @@ class EventServiceProvider extends ServiceProvider
      * @var array
      */
     protected $listen = [
-        Registered::class => [
-            SendEmailVerificationNotification::class,
+        'App\Events\UpdateProductEvent' => [
+            'App\Listeners\UpdateProductStatusListener',
         ],
     ];
 
