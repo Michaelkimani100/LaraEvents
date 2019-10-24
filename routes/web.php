@@ -16,4 +16,8 @@ use App\Http\Controllers\MailController;
 Route::get('/', function () {
     return view('welcome');
 });
+// Route::get('welcome', function () {
+//     return view('karibu');
+// });
 Route::get('sendMail','MailController@index');
+Route::get('welcome','MailController@welcome');

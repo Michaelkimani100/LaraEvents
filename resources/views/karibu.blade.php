@@ -14,8 +14,8 @@
     </head>
     <body>
       <div id="app">
-         <h1>Sending Email Normal Way</h1>
-
+          <h3>This message was sent in a second</h3>
+          {{-- <mail></mail> --}}
       </div>
     </body>
 </html>
